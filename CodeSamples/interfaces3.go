@@ -13,7 +13,7 @@ type personState interface {
 	getZipcode() int64
 }
 
-// normalperson struct implements person interface & getState but not the statePerson's zipcode
+// normalperson struct implements person interface and getState but not the statePerson's zipcode
 // it has its own two fields that it uses in the implemented functions
 type normalPerson struct {
 	State string
