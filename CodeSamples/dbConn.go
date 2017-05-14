@@ -11,13 +11,13 @@ func main() {
 		class_name string
 	)
 
-	db, err := sql.Open("postgres", "postgres://kloopzcm:<password>@localhost/kloopzdb?sslmode=disable")
+	db, err := sql.Open("postgres", "postgres://<server>:<password>@localhost/db?sslmode=disable")
 
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	rows, err := db.Query("SELECT class_id, class_name FROM md_classes")
+	rows, err := db.Query("SELECT class_id, class_name FROM tbl_classes")
 
 	defer rows.Close()
 
