@@ -13,10 +13,17 @@ instead of a fixed number of parameters
 
 func main() {
 
-	min := minimum(13, 12, 17, 14, 12, 7, 5, 2)
+	displayMessage("Hello", "from", "my", "little", "friend")
 
+	min := minimum(13, 12, 17, 14, 12, 7, 5, 2)
 	fmt.Println("The minimum value is:", min)
 
+}
+
+func displayMessage(messages ...string) {
+	for _, message := range messages {
+		println(message)
+	}
 }
 
 func minimum(values ...int) int {
