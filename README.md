@@ -31,14 +31,14 @@ The workspace is a directory hierarchy with three directories at its root:
 A workspace contains many version control repositories. Each one contains one or more packages.
 The path to a package's directory determines its ___import path___
 
-The ___go___ tool builds packages from code and installs the resulting binaries to the ___pkg___ and ___bin___ directories.
+The **go** tool builds packages from code and installs the resulting binaries to the **pkg** and **bin** directories.
 
-The ___src___ subdirectory typically contains multiple version control repositories that track the development of one or more source packages.
+The **src** subdirectory typically contains multiple version control repositories that track the development of one or more source packages.
 
 ### The ___GOPATH___ environment variable
 
-The ___GOPATH___ environment variable specifies the location of your workspace.
-To get started, create a workspace directory and set ___GOPATH___ to point to that directory. The workspace directory can be located wherever you like.
+The **GOPATH** environment variable specifies the location of your workspace.
+To get started, create a workspace directory and set **GOPATH** to point to that directory. The workspace directory can be located wherever you like.
 For example:
 
 `$ mkdir $HOME/go_workspace`
@@ -138,4 +138,4 @@ var client doozer.Conn  //client use of packages
   For more information, visit [___GOPATH___](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
 
   For more information, visit
-  [Go programming language](https://golang.org/doc/effective_go.html)
+  [The **Go** programming language](https://golang.org/doc/effective_go.html)
