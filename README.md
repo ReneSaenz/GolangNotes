@@ -66,7 +66,8 @@ There are some other changes from traditional `C`
 ### Syntax in GO
 - Syntax is critical to tooling.
 Go is designed with clarity and tooling in mind and has a clear syntax.
-- Difference in `C` and `Go` syntax: The declared name appears before the type and there are mode keywords.<br><br>
+- Difference in `C` and `Go` syntax: The declared name appears before the type and there are mode keywords.
+
 **Go** syntax
 ```
 var fn func([]int) int
