@@ -1,9 +1,13 @@
 # Go Language Notes
 
 The ___go___ programming language was created by Google in 2007.
-It is a [compiled](https://en.wikipedia.org/wiki/Compiler), [statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
+
+It is a [compiled](https://en.wikipedia.org/wiki/Compiler), 
+[statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
+
 It has pointers and
-[garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science).
+[garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)).
+
 Limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system), [memory safety](https://en.wikipedia.org/wiki/Memory_safety) features and concurrent programming.
 
 **go** is compiled, concurrent, garbage-collected, statically typed language.
