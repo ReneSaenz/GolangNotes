@@ -1,6 +1,6 @@
 # Go Language Notes
 
-The ___go___ programming language was created by Google in 2007.
+The **go** programming language was created by Google in 2007.
 
 It is a [compiled](https://en.wikipedia.org/wiki/Compiler), 
 [statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
@@ -24,9 +24,9 @@ Why **Go**?
 All source code for go is organized in a single directory. This directory is known as the workspace.
 
 The workspace is a directory hierarchy with three directories at its root:
-- ___src___ contains Go source files
-- ___pkg___ contains package objects
-- ___bin___ contains executable commands
+- **src** contains Go source files
+- **pkg** contains package objects
+- **bin** contains executable commands
 
 A workspace contains many version control repositories. Each one contains one or more packages.
 The path to a package's directory determines its ___import path___
