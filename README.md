@@ -141,7 +141,8 @@ var client doozer.Conn  //client use of packages
 
 ### Resources
 
-For more information, visit [**GOPATH**](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
+- [go environment variables](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
 
-For more information, visit
-[The **Go** programming language](https://golang.org/doc/effective_go.html)
+- [The **Go** programming language](https://golang.org/doc/effective_go.html)
+
+- [Caleb Doxsey bootcamp samples](https://github.com/golang-book/bootcamp-examples)
