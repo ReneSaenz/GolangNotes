@@ -1,9 +1,17 @@
 # Go Language Notes
 
 The **go** programming language was created by Google in 2007.
+<<<<<<< HEAD
 It is a [compiled](https://en.wikipedia.org/wiki/Compiler), [statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
+=======
+
+It is a [compiled](https://en.wikipedia.org/wiki/Compiler), 
+[statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
+
+>>>>>>> 797de085abacb78d8f472561916eee2510cca51f
 It has pointers and
-[garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science).
+[garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)).
+
 Limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system), [memory safety](https://en.wikipedia.org/wiki/Memory_safety) features and concurrent programming.
 
 **go** is compiled, concurrent, garbage-collected, statically typed language.
@@ -33,12 +41,17 @@ The **src** subdirectory typically contains multiple version control repositorie
 
 ### The **go** environment variables
 
+<<<<<<< HEAD
 When you installed **go** it creates several environment variables for you. As a user, you are responsible for definiting two environment variables.
 
 
 1. The **GOPATH** environment variable specifies the location of your workspace.
 To get started, create a workspace directory and set **GOPATH** to point to that directory. 
 The workspace directory can be located wherever you like.
+=======
+The **GOPATH** environment variable specifies the location of your workspace.
+To get started, create a workspace directory and set **GOPATH** to point to that directory. The workspace directory can be located wherever you like.
+>>>>>>> 797de085abacb78d8f472561916eee2510cca51f
 For example:
 ```
 $ mkdir $HOME/go_workspace
@@ -73,7 +86,8 @@ There are some other changes from traditional `C`
 ### Syntax in GO
 - Syntax is critical to tooling.
 Go is designed with clarity and tooling in mind and has a clear syntax.
-- Difference in `C` and `Go` syntax: The declared name appears before the type and there are mode keywords.<br><br>
+- Difference in `C` and `Go` syntax: The declared name appears before the type and there are mode keywords.
+
 **Go** syntax
 ```
 var fn func([]int) int
@@ -145,4 +159,4 @@ var client doozer.Conn  //client use of packages
   For more information, visit [**GOPATH**](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
 
   For more information, visit
-  [Go programming language](https://golang.org/doc/effective_go.html)
+  [The **Go** programming language](https://golang.org/doc/effective_go.html)
