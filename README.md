@@ -1,14 +1,8 @@
 # Go Language Notes
 
+
 The **go** programming language was created by Google in 2007.
-<<<<<<< HEAD
 It is a [compiled](https://en.wikipedia.org/wiki/Compiler), [statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
-=======
-
-It is a [compiled](https://en.wikipedia.org/wiki/Compiler), 
-[statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
-
->>>>>>> 797de085abacb78d8f472561916eee2510cca51f
 It has pointers and
 [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)).
 
@@ -41,17 +35,10 @@ The **src** subdirectory typically contains multiple version control repositorie
 
 ### The **go** environment variables
 
-<<<<<<< HEAD
 When you installed **go** it creates several environment variables for you. As a user, you are responsible for definiting two environment variables.
-
-
 1. The **GOPATH** environment variable specifies the location of your workspace.
 To get started, create a workspace directory and set **GOPATH** to point to that directory. 
 The workspace directory can be located wherever you like.
-=======
-The **GOPATH** environment variable specifies the location of your workspace.
-To get started, create a workspace directory and set **GOPATH** to point to that directory. The workspace directory can be located wherever you like.
->>>>>>> 797de085abacb78d8f472561916eee2510cca51f
 For example:
 ```
 $ mkdir $HOME/go_workspace
@@ -152,11 +139,9 @@ import "github.com/4ad/doozer"  //Doozer client import statement
 var client doozer.Conn  //client use of packages
 ```
 
+### Resources
 
+For more information, visit [**GOPATH**](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
 
-  ### Resources
-
-  For more information, visit [**GOPATH**](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
-
-  For more information, visit
-  [The **Go** programming language](https://golang.org/doc/effective_go.html)
+For more information, visit
+[The **Go** programming language](https://golang.org/doc/effective_go.html)
