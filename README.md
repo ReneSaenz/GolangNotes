@@ -1,6 +1,6 @@
 # Go Language Notes
 
-The ___go___ programming language was created by Google in 2007.
+The **go** programming language was created by Google in 2007.
 It is a [compiled](https://en.wikipedia.org/wiki/Compiler), [statically typed language](https://en.wikipedia.org/wiki/Type_system#STATIC).
 It has pointers and
 [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science).
@@ -20,31 +20,42 @@ Why **Go**?
 All source code for go is organized in a single directory. This directory is known as the workspace.
 
 The workspace is a directory hierarchy with three directories at its root:
-- ___src___ contains Go source files
-- ___pkg___ contains package objects
-- ___bin___ contains executable commands
+- **src** contains Go source files
+- **pkg** contains package objects
+- **bin** contains executable commands
 
 A workspace contains many version control repositories. Each one contains one or more packages.
-The path to a package's directory determines its ___import path___
+The path to a package's directory determines its **import path**
 
-The ___go___ tool builds packages from code and installs the resulting binaries to the ___pkg___ and ___bin___ directories.
+The **go** tool builds packages from code and installs the resulting binaries to the **pkg** and **bin** directories.
 
-The ___src___ subdirectory typically contains multiple version control repositories that track the development of one or more source packages.
+The **src** subdirectory typically contains multiple version control repositories that track the development of one or more source packages.
 
-### The ___GOPATH___ environment variable
+### The **go** environment variables
 
-The ___GOPATH___ environment variable specifies the location of your workspace.
-To get started, create a workspace directory and set ___GOPATH___ to point to that directory. The workspace directory can be located wherever you like.
+When you installed **go** it creates several environment variables for you. As a user, you are responsible for definiting two environment variables.
+
+
+1. The **GOPATH** environment variable specifies the location of your workspace.
+To get started, create a workspace directory and set **GOPATH** to point to that directory. 
+The workspace directory can be located wherever you like.
 For example:
+```
+$ mkdir $HOME/go_workspace
 
-`$ mkdir $HOME/go_workspace`
+$ export GOPATH=$HOME/go_workspace
+```
 
-`$ export GOPATH=$HOME/go_workspace`
+2. The **GOROOT** environment variable specifies the location where **go** was downloaded and installed.
+For example
+```
+$ export GOROOT=/usr/local/go1.8.3
+```
 
 ### Semantics in GO
 The semantics of GO statements is generally C-like.
 It is a compiled, statically typed procedural language with pointers.<br>
-Go makes many small changes to C semantics, mostly in the service of robustness.
+Go makes many small changes to `C` semantics, mostly in the service of robustness.
 - there is **no pointer arithmetic**
 - there are **no implicit numeric conversations**
 - array bounds are always checked
@@ -131,7 +142,7 @@ var client doozer.Conn  //client use of packages
 
   ### Resources
 
-  For more information, visit [___GOPATH___](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
+  For more information, visit [**GOPATH**](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
 
   For more information, visit
   [Go programming language](https://golang.org/doc/effective_go.html)
