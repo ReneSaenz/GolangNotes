@@ -59,7 +59,7 @@ func main(){
 func makeSpeach(){
 	animals := []Animal{ Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
 
-	for _, animal:= range animals{
+	for _, animal:= range animals {
 		fmt.Println(animal.Speak())
 	}
 

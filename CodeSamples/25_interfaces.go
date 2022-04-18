@@ -27,12 +27,16 @@ func (np normalPerson) getState() string {
 	return np.State
 }
 
-func (np normalPerson) getName() string { return "Name of CA-Resident" }
+func (np normalPerson) getName() string { 
+  return "Name of CA-Resident" 
+}
 
 // another function implemented for normalPerson struct
-func (np normalPerson) getAge() int { return np.age }
+func (np normalPerson) getAge() int { 
+  return np.age 
+}
 
-// state person implments both person and state interfaces
+// state person implements both person and state interfaces
 type statePerson struct {
 	state string
 	self  normalPerson
