@@ -146,3 +146,12 @@ var client doozer.Conn  //client use of packages
 - [The **Go** programming language](https://golang.org/doc/effective_go.html)
 
 - [Caleb Doxsey bootcamp samples](https://github.com/golang-book/bootcamp-examples)
+#### Debugger
+- [Delve debugger](https://golang.cafe/blog/golang-debugging-with-delve.html)
+- [Delve debugger with VSCode](https://www.thegreatcodeadventure.com/debugging-a-go-web-app-with-vscode-and-delve/)
+
+#### Language Server Protocol (LSP)
+- [go docs gopls](https://pkg.go.dev/golang.org/x/tools/gopls#section-readme)
+- [go docs xtools gopls](https://cs.opensource.google/go/x/tools/+/refs/tags/gopls/v0.8.3:gopls/doc/advanced.md)
+
+
