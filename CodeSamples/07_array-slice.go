@@ -30,7 +30,7 @@ func main() {
    }
 
    // declare a slice
-   // difference between array and slice is the missing length in the brakets
+   // difference between array and slice is the missing length in the brackets
    var s []float32
 
     // Declare a slice

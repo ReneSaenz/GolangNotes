@@ -34,9 +34,10 @@ func main() {
 	// Create larger objects in the heap
 	p := new(Person)
 	p.name = "Person object in the heap"
-	println(p.name)
+  p.Location = "Person object location"
 
-	println(p)
+  fmt.Println("Person name: ", p.name)
+  fmt.Println("Person location: ", p.Location)
 	fmt.Println(p)
 
 	// =================================

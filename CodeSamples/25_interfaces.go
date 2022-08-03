@@ -8,7 +8,7 @@ type person interface {
 }
 
 // interface 2
-type personState interface {
+type personAddress interface {
 	getState() string
 	getZipcode() int64
 }
@@ -44,7 +44,7 @@ type statePerson struct {
 
 type functionalPerson struct {
 	person      // inheriting the functions of person's interface
-	personState // inheriting the functions of personState interface
+	personAddress // inheriting the functions of personState interface
 }
 
 type functionalStructPerson struct {

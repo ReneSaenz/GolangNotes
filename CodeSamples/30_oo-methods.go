@@ -1,7 +1,7 @@
 package main
 
 /*
-In Go, data from the structs and methods are sepatated
+In Go, struct data and methods are sepatated
 New methods can be added to the struct from anywhere within the package
 */
 

@@ -15,8 +15,8 @@ var input = `
 
 func main() {
 	// our target will be of type map[string]interface{}, which is a
-	// pretty generic type that will give us a hashtable whose keys
-	// are strings, and whose values are of type interface{}
+	// pretty generic type that will give us a hashtable 
+  // whose keys are strings, and whose values are of type interface{}
 	var val map[string]interface{}
 
 	if err := json.Unmarshal([]byte(input), &val); err != nil {

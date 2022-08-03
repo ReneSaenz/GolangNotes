@@ -8,9 +8,9 @@ It has pointers and
 
 Limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system), [memory safety](https://en.wikipedia.org/wiki/Memory_safety) features and concurrent programming.
 
-**go** is compiled, concurrent, garbage-collected, statically typed language.
+`go` is compiled, concurrent, garbage-collected, statically typed language.
 
-**go** is efficient, scalable and productive.
+`go` is efficient, scalable and productive.
 
 Why **Go**?
 - [Part 1](http://golang-basic.blogspot.com/2014/05/basic-golang-why-and-what-part-1.html)
@@ -98,7 +98,7 @@ func (x T) Abs() float64
 negAbs := func(x T) float64 { return -Abs(x) }
 ```
 - Go functions can **return multiple values**.
-A common case is to return the function result and and **error** value as a pair.
+A common case is to return the function result and **error** value as a pair.
 ```
 func ReadByte() (c byte, err error)
 c, err := ReadByte()
