@@ -139,6 +139,50 @@ import "github.com/4ad/doozer"  //Doozer client import statement
 var client doozer.Conn  //client use of packages
 ```
 
+### Functions 
+Functions in Go are first class citizens. This means that functions can 
+be declared within a function and also a function can return another function.
+
+An anonymous function is a function without a name.
+A closure is a special type of anonymous function, that has the ability to 
+reference variables declared outside of itself. 
+They can potentially manipulate global variables.
+Closures gives you access to outer function's scope from within an inner function.
+
+#### Functions on Structs - Methods 
+A method is a function that has a "receiver" argument.
+A method is defined and associated with a receiver type, allowing you to use dot notation to invoke the method on the receiver type.
+
+The receiver argument is declared with a name and a type.
+The receiver in most cases will be declared as a struct type and is declared after the 'func' keyword and before the method name.
+
+A receiver can be declared as a pointer or non-pointer type.
+There are two primary reasons to use a pointer receiver.
+1. The method can modify the passed in data that its receiver points too. The modifications last beyond the execution of the method.
+2. Avoid copying the value on each method call, which is more efficient approach
+
+Example 
+```
+
+type person struct {
+	firstname string
+	surname   string
+	age       int
+}
+
+func (p *person) updateAge(newAge int) {
+	p.age = newAge
+}
+
+func (p person) fullname() string {
+	return p.firstname + " " + p.surname
+}
+
+```
+NOTE: the fullname() method does not make any modification to the person struct.
+Thus, the receiver can be a non-pointer type
+
+
 ### Resources
 
 - [go environment variables](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable)
@@ -146,6 +190,9 @@ var client doozer.Conn  //client use of packages
 - [The **Go** programming language](https://golang.org/doc/effective_go.html)
 
 - [Caleb Doxsey bootcamp samples](https://github.com/golang-book/bootcamp-examples)
+- [cloudacademy/learn-go](https://github.com/cloudacademy/learn-go)
+- [cloudacademy/godemo](https://github.com/cloudacademy/godemo)
+
 #### Debugger
 - [Delve debugger](https://golang.cafe/blog/golang-debugging-with-delve.html)
 - [Delve debugger with VSCode](https://www.thegreatcodeadventure.com/debugging-a-go-web-app-with-vscode-and-delve/)
